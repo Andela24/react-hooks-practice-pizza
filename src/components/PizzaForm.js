@@ -34,8 +34,14 @@ function PizzaForm( {pizza, id, topping, size, vegetarian, setEditPizza} ) {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(pizza),
+          body: JSON.stringify({
+            id,
+            topping,
+            size,
+            vegetarian
+          }),
         })
+      
           .then((resp) => resp.json())
           .then((newData) => console.log(newData));
         };
