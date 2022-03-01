@@ -1,0 +1,9 @@
+1. render list of pizzas into the table 
+   a.  each row should be pizza component
+2. setting p the PATCH request
+    a. how to get info into the form 
+    b. how to send info to database
+    c. how to re-render the actual pizza component
+
+
+    click edit sends info to form 
