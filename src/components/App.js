@@ -15,9 +15,9 @@ function App() {
   }, []);
   // console.log(pizzas)
 
-  const handleEditButtonClick = (sentId) => {
+  const handleEditButtonClick = (id) => {
     // console.log("clicked", {id} )
-   const foundPizza= pizzas.find(p => p.id === sentId) //every time we click on edit we want to be able to change it
+   const foundPizza= pizzas.find(p => p.id === id) //every time we click on edit we want to be able to change it
    setEditPizza(foundPizza);
   }
 
